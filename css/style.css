@@ -326,7 +326,41 @@ header .header-logo {
 .cta {
     text-align: center;
     background-color: var(--bg-text-color-purple);
+    margin-bottom: 0;
+}
+
+/* MEDIA QUERIES FOR CTA */
+/* LAPTOP */
+@media screen and (min-width: 991px) {
+    .cta .container {
+        width: 30%;
+    }
 }
 
 
 /* FOOTER */
+footer {
+    background-color: var(--footer-bg-col);
+    text-align: center;
+    color: white;
+}
+
+footer span {
+    display: block;
+    padding: 2rem 2rem;
+}
+
+/* MEDIA QUERIES FOR FOOTER */
+/* TABLET */
+@media screen and (min-width:767px) {
+    footer .container {
+        width: 50%;
+    }
+}
+
+/* LAPTOP */
+@media screen and (min-width:991px) {
+    footer .container {
+        width: 25%;
+    }
+}
