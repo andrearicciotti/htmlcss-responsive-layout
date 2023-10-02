@@ -218,3 +218,23 @@ header .header-logo {
 }
 
 
+/* FEATURES-1 SECTION */
+.features-1 {
+    background-color: var(--bg-text-color-purple);
+    padding: 2rem;
+}
+
+.white-col {
+    background-color: white;
+    /* margin: 2rem; */
+}
+
+/* FEATURES-1 SECTION MEDIA QUERIES */
+@media screen and (min-width: 991px) {
+    .features-1 {
+        display: flex;
+    }
+}
+
+
+/* TESTIMONIALS SECTION */
