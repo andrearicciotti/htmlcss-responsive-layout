@@ -19,6 +19,17 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
+button {
+    border: none;
+    color: white;
+    background-color: inherit;
+}
+
+li {
+    list-style-type: none;
+    line-height: 80px;
+}
+
 
 /* UTILITIES */
 :root {
@@ -27,4 +38,68 @@ body {
     --bg-text-color-purple: #9692de;
     --golden-text: #f4c36f;
     --footer-bg-col: #333333;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.wrapper {
+    flex-wrap: wrap;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+
+/* HEADER */
+header {
+    background-color: var(--header-text-blue-col);
+    height: 80px;
+    display: flex;
+    padding-right: 3rem;
+}
+
+header .header-logo {
+    scale: 0.5;
+}
+
+.menu {
+    font-size: 2.5rem;
+}
+
+.navigation {
+    display: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    gap: 1.5rem;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+}
+
+.navigation .start-btn {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: .6rem .9rem;
+}
+
+/* HEADER MEDIA QUERIES */
+@media screen and (min-width: 992px) {
+    .menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+    }
 }
