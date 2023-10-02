@@ -25,6 +25,10 @@ button {
     background-color: inherit;
 }
 
+h2 {
+    font-size: 2.5rem;
+}
+
 li {
     list-style-type: none;
     line-height: 80px;
@@ -286,3 +290,22 @@ header .header-logo {
 
 
 /* ABOUT US SECTION */
+.about-us .col {
+    text-align: left;
+}
+
+/* ABOUT US SECTION MEDIA QUERIES */
+/* TABLET */
+@media screen and (min-width: 767px) {
+    .about-us .container {
+        display: flex;
+    }
+
+    .about-us .container .col-55 {
+        width: 55%;
+    }
+
+    .about-us .container .col-40 {
+        width: 40%;
+    }
+}
