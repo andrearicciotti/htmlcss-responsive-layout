@@ -309,3 +309,24 @@ header .header-logo {
         width: 40%;
     }
 }
+
+/* LAPTOP */
+@media screen and (min-width: 767px) {
+    .about-us .container .col-55 {
+        width: 65%;
+    }
+
+    .about-us .container .col-40 {
+        width: 30%;
+    }
+}
+
+
+/* CALL TO ACTION SECTION */
+.cta {
+    text-align: center;
+    background-color: var(--bg-text-color-purple);
+}
+
+
+/* FOOTER */
