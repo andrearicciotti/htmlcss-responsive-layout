@@ -31,8 +31,13 @@ li {
 }
 
 main > * {
-    margin: 5rem 0;
+    margin: 2rem 0;
 }
+
+section {
+    padding: 2rem 2rem;
+}
+
 
 /* UTILITIES */
 :root {
@@ -44,7 +49,7 @@ main > * {
 }
 
 .container {
-    width: 85%;
+    width: 95%;
     margin: 0 auto;
 }
 
@@ -60,19 +65,23 @@ main > * {
     justify-content: space-between;
 }
 
+.column-direction {
+    flex-direction: column;
+}
+
 .btn {
     border-radius: 20px;
     padding: .7rem 1.4rem; 
 }
 
 .col {
-    border-radius: 15px;
+    border-radius: 35px;
     padding: 2rem;
-    margin: 4rem 0;
+    margin: 2rem 0;
     text-align: center;
 }
 
-.col h2, p {
+.col h2, h3, p {
     margin: 2rem 0;
 }
 
@@ -88,7 +97,7 @@ header {
 header .header-logo {
     scale: 0.5;
     position: relative;
-    left: -12%;
+    left: -5%;
 }
 
 .menu {
@@ -117,7 +126,7 @@ header .header-logo {
 /* HEADER MEDIA QUERIES */
 @media screen and (min-width: 767px) {
     header .header-logo {
-        left: -5%;
+        left: -3%;
     }
 }
 
@@ -141,7 +150,7 @@ header .header-logo {
     text-align: left;
 }
 
-.hero-col h2 {
+.hero-col h3 {
     color: var(--header-text-blue-col);
     font-size: 2.3rem;
 }
@@ -221,7 +230,6 @@ header .header-logo {
 /* FEATURES-1 SECTION */
 .features-1 {
     background-color: var(--bg-text-color-purple);
-    padding: 2rem;
 }
 
 .white-col {
@@ -231,6 +239,7 @@ header .header-logo {
 
 /* FEATURES-1 SECTION MEDIA QUERIES */
 @media screen and (min-width: 991px) {
+
     .features-1 {
         display: flex;
     }
@@ -238,3 +247,6 @@ header .header-logo {
 
 
 /* TESTIMONIALS SECTION */
+.testimonials .col-purple {
+    background-color: var(--bg-text-color-purple);
+}
