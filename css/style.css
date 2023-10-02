@@ -49,7 +49,7 @@ section {
 }
 
 .container {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -124,12 +124,14 @@ header .header-logo {
 }
 
 /* HEADER MEDIA QUERIES */
+/* TABLET */
 @media screen and (min-width: 767px) {
     header .header-logo {
         left: -3%;
     }
 }
 
+/* LAPTOP */
 @media screen and (min-width: 991px) {
     .menu {
         display: none;
@@ -238,6 +240,7 @@ header .header-logo {
 }
 
 /* FEATURES-1 SECTION MEDIA QUERIES */
+/* LAPTOP */
 @media screen and (min-width: 991px) {
 
     .features-1 {
@@ -250,3 +253,36 @@ header .header-logo {
 .testimonials .col-purple {
     background-color: var(--bg-text-color-purple);
 }
+
+
+/* FEATURES-2 SECTION */
+.features-2 {
+    background-color: var(--bg-text-color-purple);
+    text-align: center;
+    color: white;
+}
+
+.features-2 .col {
+    text-align: left;
+    background-color: white;
+    color: var(--bg-text-color-purple);
+    width: 100%;
+}
+
+/* FEATURES-2 SECTION MEDIA QUERIES */
+/* TABLET */
+@media screen and (min-width:767px) {
+    .features-2 .col {
+        width: 48%;
+    }
+}
+
+/* LAPTOP */
+@media screen and (min-width:991px) {
+    .features-2 .col {
+        width: 31%;
+    }
+}
+
+
+/* ABOUT US SECTION */
