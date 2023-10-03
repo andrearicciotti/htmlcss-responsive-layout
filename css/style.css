@@ -534,9 +534,63 @@ header .header-logo {
     text-align: center;
     background-color: var(--bg-text-color-purple);
     margin-bottom: 0;
+    color: white;
+}
+
+.get-start {
+    font-size: 1.5rem;
+}
+
+.cta h3 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.cta h2 {
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--golden-text);
+}
+
+.cta p {
+    font-weight: 400;
+}
+
+.cta .btn {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--bg-text-color-purple);
+    font-size: 1.3rem;
+    font-weight: 800;
+    background-color: white;
+    padding: 1.5rem 4rem;
+    margin: 1rem 0 3rem 0;
+    letter-spacing: .2rem;
+}
+
+.copyright {
+    display: block;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.copyright i {
+    font-size: .4rem;
+    vertical-align: middle;
+}
+
+.copyright a {
+    color: inherit;
 }
 
 /* MEDIA QUERIES FOR CTA */
+/* TABLET */
+@media screen and (min-width: 767PX) {
+    .cta .container {
+        width: 50%;
+    }
+}
+
 /* LAPTOP */
 @media screen and (min-width: 991px) {
     .cta .container {
