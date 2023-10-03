@@ -154,7 +154,12 @@ header .header-logo {
 
 .jumbo {
     text-align: left;
+    padding-bottom: 0;
 }
+
+/* .jumbo:first-child {
+    padding-bottom: 2rem;
+} */
 
 .hero-col h3 {
     color: var(--header-text-blue-col);
@@ -168,8 +173,17 @@ header .header-logo {
 }
 
 .hero-col img {
-    position: relative;
-    bottom: -23px;
+    margin-top: 2.5rem;
+    display: block;
+    max-height: 220px;
+    /* position: relative;
+    bottom: -23px; */
+}
+
+.hero-col i {
+    color: var(--header-text-blue-col);
+    font-size: 6rem;
+    margin-top: 2rem;
 }
 
 .hero-col .btn {
@@ -177,11 +191,14 @@ header .header-logo {
     color: white;
     font-weight: 800;
     font-size: 1.5rem;
-    padding: .7rem 3.5rem;
+    padding: .6rem .9rem;
     text-decoration: none;
+    margin-bottom: 3rem;
 }
 
-.hero-col i {
+.jumbo-col i {
+    font-size: initial;
+    color: white;
     display: inline-block;
     margin-right: 1rem;
 }
@@ -203,9 +220,16 @@ header .header-logo {
     }
 
     .hero .jumbo {
-        width: 66%;
+        width: 65.5%;
     }
 
+    .hero .jumbo:nth-child(2) {
+        align-self: end;
+    }
+
+    .hero-col img {
+        width: 50%;
+    }
 }
 
 /* LAPTOP */
@@ -228,7 +252,8 @@ header .header-logo {
     }
 
     .hero-col img {
-        bottom: -47px;
+        bottom: -53px;
+        width: 100%;
     }
 }
 
@@ -246,8 +271,7 @@ header .header-logo {
 /* FEATURES-1 SECTION MEDIA QUERIES */
 /* LAPTOP */
 @media screen and (min-width: 991px) {
-
-    .features-1 {
+    .features-1 .container {
         display: flex;
     }
 }
