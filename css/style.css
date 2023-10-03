@@ -1,3 +1,16 @@
+:root {
+    --header-text-blue-col: #3982f5;
+    --card-bg-col: #bddcfc;
+    --bg-text-color-purple: #9692de;
+    --golden-text: #f4c36f;
+    --footer-bg-col: #333333;
+}
+
+
+/* ===================================================== */
+/* ===================================================== */
+
+
 /* RESET */
 * {
     margin: 0;
@@ -8,6 +21,10 @@
 img {
     max-width: 100%;
 }
+
+
+/* ===================================================== */
+/* ===================================================== */
 
 
 /* COMMON */
@@ -43,15 +60,11 @@ section {
 }
 
 
-/* UTILITIES */
-:root {
-    --header-text-blue-col: #3982f5;
-    --card-bg-col: #bddcfc;
-    --bg-text-color-purple: #9692de;
-    --golden-text: #f4c36f;
-    --footer-bg-col: #333333;
-}
+/* ===================================================== */
+/* ===================================================== */
 
+
+/* UTILITIES */
 .container {
     width: 100%;
     margin: 0 auto;
@@ -88,6 +101,10 @@ section {
 .col h2, h3, p {
     margin: 2rem 0;
 }
+
+
+/* ===================================================== */
+/* ===================================================== */
 
 
 /* HEADER */
@@ -147,6 +164,10 @@ header .header-logo {
 }
 
 
+/* ===================================================== */
+/* ===================================================== */
+
+/* MAIN */
 /* HERO */
 .hero-col {
     background-color: var(--card-bg-col);
@@ -156,10 +177,6 @@ header .header-logo {
     text-align: left;
     padding-bottom: 0;
 }
-
-/* .jumbo:first-child {
-    padding-bottom: 2rem;
-} */
 
 .hero-col h3 {
     color: var(--header-text-blue-col);
@@ -176,8 +193,6 @@ header .header-logo {
     margin-top: 2.5rem;
     display: block;
     max-height: 220px;
-    /* position: relative;
-    bottom: -23px; */
 }
 
 .hero-col i {
@@ -202,7 +217,6 @@ header .header-logo {
     display: inline-block;
     margin-right: 1rem;
 }
-
 
 /* HERO MEDIA QUERIES */
 /* TABLET */
@@ -264,6 +278,10 @@ header .header-logo {
 }
 
 
+/* ===================================================== */
+/* ===================================================== */
+
+
 /* FEATURES-1 SECTION */
 .features-1 {
     background-color: var(--bg-text-color-purple);
@@ -317,6 +335,10 @@ header .header-logo {
 }
 
 
+/* ===================================================== */
+/* ===================================================== */
+
+
 /* TESTIMONIALS SECTION */
 .testimonials .col-purple {
     background-color: var(--bg-text-color-purple);
@@ -364,6 +386,10 @@ header .header-logo {
         width: 70%;
     }
 }
+
+
+/* ===================================================== */
+/* ===================================================== */
 
 
 /* FEATURES-2 SECTION */
@@ -424,6 +450,10 @@ header .header-logo {
         width: 31%;
     }
 }
+
+
+/* ===================================================== */
+/* ===================================================== */
 
 
 /* ABOUT US SECTION */
@@ -529,6 +559,10 @@ header .header-logo {
 }
 
 
+/* ===================================================== */
+/* ===================================================== */
+
+
 /* CALL TO ACTION SECTION */
 .cta {
     text-align: center;
@@ -537,7 +571,7 @@ header .header-logo {
     color: white;
 }
 
-.get-start {
+.cta .get-start {
     font-size: 1.5rem;
 }
 
@@ -568,18 +602,18 @@ header .header-logo {
     letter-spacing: .2rem;
 }
 
-.copyright {
+.cta .copyright {
     display: block;
     color: white;
     font-size: 1.3rem;
 }
 
-.copyright i {
+.cta .copyright i {
     font-size: .4rem;
     vertical-align: middle;
 }
 
-.copyright a {
+.cta .copyright a {
     color: inherit;
 }
 
@@ -597,6 +631,10 @@ header .header-logo {
         width: 30%;
     }
 }
+
+
+/* ===================================================== */
+/* ===================================================== */
 
 
 /* FOOTER */
