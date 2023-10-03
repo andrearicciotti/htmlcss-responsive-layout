@@ -263,9 +263,21 @@ header .header-logo {
     background-color: var(--bg-text-color-purple);
 }
 
+.planning  {
+    color: white;
+}
+
 .white-col {
     background-color: white;
-    /* margin: 2rem; */
+}
+
+.white-col i {
+    background-color: var(--bg-text-color-purple);
+    border-radius: 50%;
+    padding: .9rem;
+    width: 25px;
+    height: 25px;
+    font-weight: 800;
 }
 
 /* FEATURES-1 SECTION MEDIA QUERIES */
@@ -273,6 +285,24 @@ header .header-logo {
 @media screen and (min-width: 991px) {
     .features-1 .container {
         display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .features-1 .col {
+        width: 48%;
+    }
+
+    .planning {
+        text-align: left;
+    }
+
+    .planning p {
+        margin-bottom: 0;
+    }
+
+    .planning img {
+        margin-bottom: 12rem;
     }
 }
 
