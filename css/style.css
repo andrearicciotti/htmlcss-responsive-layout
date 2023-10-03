@@ -237,6 +237,7 @@ header .header-logo {
     html {
         font-size: 55%;
     }
+
     .container {
         width: 60%;
     }
@@ -289,6 +290,10 @@ header .header-logo {
         justify-content: space-between;
     }
 
+    .features-1 .container {
+        width: 50%;
+    }
+
     .features-1 .col {
         width: 48%;
     }
@@ -310,6 +315,49 @@ header .header-logo {
 /* TESTIMONIALS SECTION */
 .testimonials .col-purple {
     background-color: var(--bg-text-color-purple);
+    color: white;
+}
+
+.testimonials .col > p {
+    margin-bottom: 0;
+}
+
+.testimonials h2 {
+    color: var(--bg-text-color-purple);
+    font-size: 3rem;
+}
+
+.testimonials span, p {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.col-purple p {
+    font-weight: 400;
+}
+
+.card-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* TESTIMONIAL SECTION MEDIA QUERIES */
+/* TABLET */
+@media screen and (min-width: 767px) {
+    .col-purple {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .card-img {
+        width: 25%;
+    }
+
+    .card-content {
+        width: 70%;
+    }
 }
 
 
