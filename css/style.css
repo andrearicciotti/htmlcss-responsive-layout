@@ -215,16 +215,12 @@ header .header-logo {
     }
     
     .hero .col {
-        width: 31%;
+        width: 30%;
         margin: 0;
     }
 
     .hero .jumbo {
-        width: 65.5%;
-    }
-
-    .hero .jumbo:nth-child(2) {
-        align-self: end;
+        width: 65%;
     }
 
     .hero-col img {
@@ -246,16 +242,25 @@ header .header-logo {
         display: flex;
         gap: 1.5rem;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     .jumbo-col {
-        width: 50%;
+        width: 45%;
     }
 
     .hero-col img {
-        bottom: -53px;
         width: 100%;
     }
+
+    .hero .jumbo .jumbo-col:nth-child(1) {
+        align-self: center;
+    }
+
+    .hero .jumbo .jumbo-col:nth-child(2) {
+        align-self: end;
+    }
+
 }
 
 
@@ -366,6 +371,36 @@ header .header-logo {
     background-color: var(--bg-text-color-purple);
     text-align: center;
     color: white;
+}
+
+.features-2 h2 {
+    font-size: 3rem;
+    margin: 2.5rem 0;
+}
+
+.features-2 .col h2 {
+    font-size: 4rem;
+}
+
+.features-2 .col h3 {
+    font-size: 2.5rem;
+}
+
+.features-2 .col p {
+    color: rgb(165, 164, 164);
+    font-weight: 400;
+}
+
+.features-2 .col .btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 800;
+    background-color: var(--bg-text-color-purple);
+    padding: .8rem 5rem;
+    margin: 1.2rem 0;
+    letter-spacing: .2rem;
 }
 
 .features-2 .col {
